@@ -1,24 +1,38 @@
 # vuetify-electron-app
 
-## Project setup
+Install node and npm 
+
 ```
-yarn install
+npm install -g @vue/cli
 ```
 
-### Compiles and hot-reloads for development
+To build from start 
 ```
-yarn serve
-```
-
-### Compiles and minifies for production
-```
-yarn build
+vue create YOUR-APP-NAME
 ```
 
-### Lints and fixes files
+Add vuetify:
+
 ```
-yarn lint
+vue add vuetify
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Add electron
+
+```
+vue add electron-builder
+```
+
+Start the app by
+
+```
+npm run electron:serve
+```
+
+or build the app by
+
+```
+npm run electron:build
+```
+
+and then be amazed by the simplicity of building a shiny electron app!
